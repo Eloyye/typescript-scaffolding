@@ -1,0 +1,27 @@
+{
+    "name": "typescript-now",
+    "module": "index.ts",
+    "type": "module",
+    "private": true,
+    "scripts": {
+        "lint": "bun run eslint .",
+        "format": "bun run prettier --write .",
+        "dev": "bun run index.ts | bun run pino-pretty",
+        "build": "bun run tsc",
+        "start": "bun run index.ts"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.25.1",
+        "@types/bun": "latest",
+        "eslint": "^9.25.1",
+        "pino-pretty": "^13.0.0",
+        "prettier": "^3.5.3",
+        "typescript-eslint": "^8.31.0"
+    },
+    "peerDependencies": {
+        "typescript": "^5.8.3"
+    },
+    "dependencies": {
+        "pino": "^9.6.0"
+    }
+}
